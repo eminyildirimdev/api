@@ -1,5 +1,84 @@
-# Created by https://www.toptal.com/developers/gitignore/api/macos,windows,visualstudiocode,visualstudio
-# Edit at https://www.toptal.com/developers/gitignore?templates=macos,windows,visualstudiocode,visualstudio
+# Created by https://www.toptal.com/developers/gitignore/api/video,macos,windows,visualstudio,visualstudiocode,images,audio
+# Edit at https://www.toptal.com/developers/gitignore?templates=video,macos,windows,visualstudio,visualstudiocode,images,audio
+
+### Audio ###
+*.aif
+*.iff
+*.m3u
+*.m4a
+*.mid
+*.mp3
+*.mpa
+*.ra
+*.wav
+*.wma
+*.ogg
+*.flac
+
+### Images ###
+# JPEG
+*.jpg
+*.jpeg
+*.jpe
+*.jif
+*.jfif
+*.jfi
+
+# JPEG 2000
+*.jp2
+*.j2k
+*.jpf
+*.jpx
+*.jpm
+*.mj2
+
+# JPEG XR
+*.jxr
+*.hdp
+*.wdp
+
+# Graphics Interchange Format
+*.gif
+
+# RAW
+*.raw
+
+# Web P
+*.webp
+
+# Portable Network Graphics
+*.png
+
+# Animated Portable Network Graphics
+*.apng
+
+# Multiple-image Network Graphics
+*.mng
+
+# Tagged Image File Format
+*.tiff
+*.tif
+
+# Scalable Vector Graphics
+*.svg
+*.svgz
+
+# Portable Document Format
+*.pdf
+
+# X BitMap
+*.xbm
+
+# BMP
+*.bmp
+*.dib
+
+# ICO
+*.ico
+
+# 3D Images
+*.3dm
+*.max
 
 ### macOS ###
 # General
@@ -33,6 +112,24 @@ Temporary Items
 ### macOS Patch ###
 # iCloud generated files
 *.icloud
+
+### Video ###
+*.3g2
+*.3gp
+*.asf
+*.asx
+*.avi
+*.flv
+*.mkv
+*.mov
+*.mp4
+*.mpg
+*.ogv
+*.rm
+*.swf
+*.vob
+*.wmv
+*.webm
 
 ### VisualStudioCode ###
 .vscode/*
@@ -469,4 +566,4 @@ FodyWeavers.xsd
 ### VisualStudio Patch ###
 # Additional files built by Visual Studio
 
-# End of https://www.toptal.com/developers/gitignore/api/macos,windows,visualstudiocode,visualstudio
+# End of https://www.toptal.com/developers/gitignore/api/video,macos,windows,visualstudio,visualstudiocode,images,audio
