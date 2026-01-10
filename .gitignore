@@ -1,6 +1,11 @@
 # Created by https://www.toptal.com/developers/gitignore/api/video,macos,windows,visualstudio,visualstudiocode,images,audio
 # Edit at https://www.toptal.com/developers/gitignore?templates=video,macos,windows,visualstudio,visualstudiocode,images,audio
 
+### OBJ BİN ###
+bin/
+obj/
+.vscode/
+
 ### Audio ###
 *.aif
 *.iff
