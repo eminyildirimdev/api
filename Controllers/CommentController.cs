@@ -4,8 +4,11 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using api.DTOs.Comment;
+using api.Extensions;
 using api.Interface;
 using api.Mappers;
+using api.Models;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
@@ -19,10 +22,13 @@ namespace api.Controllers
         private readonly ICommentRepository _commentRepo;
         private readonly IStockRepository _stockRepo;
 
-        public CommentController(ICommentRepository commentRepo, IStockRepository stockRepo)
+        private readonly UserManager<AppUser> _userManager;
+
+        public CommentController(ICommentRepository commentRepo, IStockRepository stockRepo, UserManager<AppUser> userManager)
         {
             _commentRepo = commentRepo;
             _stockRepo = stockRepo;
+            _userManager = userManager;
         }
 
         [HttpGet]
@@ -62,7 +68,10 @@ namespace api.Controllers
             {
                 return BadRequest("Hisse Mevcut Değil");
             }
+            
 
+            //var username = User.GetUsername();
+            //var appuser = await _userManager.FindByNameAsync();
             var commentModel = commenDTO.ToCommentFromCreate(stockId);
             await _commentRepo.CreateAsync(commentModel);
 
