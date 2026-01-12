@@ -12,8 +12,8 @@ using api.Context;
 namespace api.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20260112195546_PortfolioManyToMany")]
-    partial class PortfolioManyToMany
+    [Migration("20260112212246_PortfolioManyToManyy")]
+    partial class PortfolioManyToManyy
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
